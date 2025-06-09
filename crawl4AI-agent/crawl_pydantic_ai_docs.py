@@ -33,7 +33,7 @@ class ProcessedChunk:
     metadata: Dict[str, Any]
     embedding: List[float]
 
-def chunk_text(text: str, chunk_size: int = 5000) -> List[str]:
+def chunk_text(text: str, chunk_size: int = 500) -> List[str]:
     """Split text into chunks, respecting code blocks and paragraphs."""
     chunks = []
     start = 0
@@ -214,7 +214,7 @@ async def crawl_parallel(urls: List[str], max_concurrent: int = 5):
 
 def get_pydantic_ai_docs_urls() -> List[str]:
     """Get URLs from Pydantic AI docs sitemap."""
-    sitemap_url = "https://ai.pydantic.dev/sitemap.xml"
+    sitemap_url = "https://www.conmendo.de/page-sitemap.xml"
     try:
         response = requests.get(sitemap_url)
         response.raise_for_status()

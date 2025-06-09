@@ -105,8 +105,8 @@ async def run_agent_with_streaming(user_input: str):
 
 
 async def main():
-    st.title("Pydantic AI Agentic RAG")
-    st.write("Ask any question about Pydantic AI, the hidden truths of the beauty of this framework lie within.")
+    st.title("Conmendo AI Agent")
+    st.write("Frage mich etwas, was du über Conmendo GmbH wissen möchtest basierend auf dem Wissen von https://www.conmendo.de/")
 
     # Initialize chat history in session state if not present
     if "messages" not in st.session_state:
@@ -121,7 +121,7 @@ async def main():
                 display_message_part(part)
 
     # Chat input for the user
-    user_input = st.chat_input("What questions do you have about Pydantic AI?")
+    user_input = st.chat_input("What questions do you have about Conmendo GbmH")
 
     if user_input:
         # We append a new request to the conversation explicitly
