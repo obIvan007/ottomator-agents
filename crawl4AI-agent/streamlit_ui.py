@@ -105,8 +105,11 @@ async def run_agent_with_streaming(user_input: str):
 
 
 async def main():
-    st.title("Conmendo AI Agent")
-    st.write("Frage mich etwas, was du über Conmendo GmbH wissen möchtest basierend auf dem Wissen von https://www.conmendo.de/")
+
+
+    st.image("https://www.conmendo.de/wp-content/uploads/2023/07/ConMendo-Logo-wht-HR.png")
+    st.title("Conmendo - AI - Agent")
+    st.write("Stelle mir eine Frage zur Conmendo GmbH – ich beantworte sie basierend auf öffentlich verfügbaren Informationen von conmendo.de, mithilfe eines RAG-Modells (Retrieval-Augmented Generation). Bitte beachte: Die Antworten können unvollständig oder gelegentlich ungenau sein.")
 
     # Initialize chat history in session state if not present
     if "messages" not in st.session_state:
@@ -121,7 +124,7 @@ async def main():
                 display_message_part(part)
 
     # Chat input for the user
-    user_input = st.chat_input("What questions do you have about Conmendo GbmH")
+    user_input = st.chat_input("Was ist deine Frage über Conmendo GmbH ?")
 
     if user_input:
         # We append a new request to the conversation explicitly

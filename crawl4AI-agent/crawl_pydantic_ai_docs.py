@@ -33,7 +33,7 @@ class ProcessedChunk:
     metadata: Dict[str, Any]
     embedding: List[float]
 
-def chunk_text(text: str, chunk_size: int = 500) -> List[str]:
+def chunk_text(text: str, chunk_size: int = 8000) -> List[str]:
     """Split text into chunks, respecting code blocks and paragraphs."""
     chunks = []
     start = 0
