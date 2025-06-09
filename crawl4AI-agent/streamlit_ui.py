@@ -108,8 +108,8 @@ async def main():
 
 
     st.image("https://www.conmendo.de/wp-content/uploads/2023/07/ConMendo-Logo-wht-HR.png")
-    st.title("Conmendo - AI - Agent")
-    st.write("Stelle mir eine Frage zur Conmendo GmbH – ich beantworte sie basierend auf öffentlich verfügbaren Informationen von conmendo.de, mithilfe eines RAG-Modells (Retrieval-Augmented Generation). Bitte beachte: Die Antworten können unvollständig oder gelegentlich ungenau sein.")
+    st.title("ConMendo - AI - Agent")
+    st.write("Stelle mir eine Frage zur ConMendo GmbH – ich beantworte sie basierend auf öffentlich verfügbaren Informationen von conmendo.de, mithilfe eines RAG-Modells (Retrieval-Augmented Generation). Bitte beachte: Die Antworten können unvollständig oder gelegentlich ungenau sein.")
 
     # Initialize chat history in session state if not present
     if "messages" not in st.session_state:
@@ -124,7 +124,7 @@ async def main():
                 display_message_part(part)
 
     # Chat input for the user
-    user_input = st.chat_input("Was ist deine Frage über Conmendo GmbH?")
+    user_input = st.chat_input("Welche Frage hast du bezüglich der ConMendo GmbH?")
 
     if user_input:
         # We append a new request to the conversation explicitly
