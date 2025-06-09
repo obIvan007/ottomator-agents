@@ -109,7 +109,8 @@ async def main():
 
     st.image("https://www.conmendo.de/wp-content/uploads/2023/07/ConMendo-Logo-wht-HR.png")
     st.title("ConMendo - AI - Agent")
-    st.write("Stelle mir eine Frage zur ConMendo GmbH. Ich werde sie basierend auf öffentlich verfügbaren Informationen von ConMendo.de mithilfe eines RAG-Modells (Retrieval-Augmented Generation) beantworten. Bitte beachte, dass die Antworten unvollständig oder gelegentlich ungenau sein können. Zudem wird die Antwortzeit mit jeder weiteren Frage länger, da die gesamte Konversation ausgewertet wird. Um den Chat neu zu starten, lade die Seite bitte neu!")
+    st.write("Stelle mir eine Frage zur ConMendo GmbH. Ich werde sie basierend auf öffentlich verfügbaren Informationen von ConMendo.de mithilfe eines RAG-Modells (Retrieval-Augmented Generation) beantworten.")
+    st.write("Bitte beachte, dass die Antworten unvollständig oder gelegentlich ungenau sein können. Zudem wird die Antwortzeit mit jeder weiteren Frage länger, da die gesamte Konversation ausgewertet wird. Um den Chat neu zu starten, lade die Seite bitte neu!")
 
     # Initialize chat history in session state if not present
     if "messages" not in st.session_state:
